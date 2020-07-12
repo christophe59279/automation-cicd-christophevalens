@@ -1,0 +1,100 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-07-12T12:40:25.108Z",
+    "end": "2020-07-12T12:40:43.609Z",
+    "duration": 18501,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "405fc547-a859-487f-a77a-718df7f2dd5f",
+      "title": "",
+      "fullFile": "cypress/integration/addAClient.js",
+      "file": "cypress/integration/addAClient.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ab9d94f8-0de6-4c49-966a-753ae6d0f3a4",
+          "title": "add a client",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "login, add a client and logout",
+              "fullTitle": "add a client login, add a client and logout",
+              "timedOut": null,
+              "duration": 9501,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//login\ncy.log('login');\ncy.get('[type=text]').type('tester01');\ncy.get('[type=password]').type('GteteqbQQgSr88SwNExUQv2ydb7xuf8c');\ncy.get('.blue').click(); //client view, create\ncy.log('client view');\ncy.get('.blocks .block:nth-child(2) a').click();\ncy.get('.blue').click(); //create a client\ncy.log('create client');\ncy.get(':nth-child(1) >input').type(_faker[\"default\"].name.firstName());\ncy.get(':nth-child(2) >input').type(_faker[\"default\"].internet.email());\ncy.get(':nth-child(3) >input').type(_faker[\"default\"].phone.phoneNumber());\ncy.get('.blue').click(); //logout\ncy.log('logout');\ncy.get('.user > .btn').click();",
+              "err": {},
+              "uuid": "ccb51747-f12c-4ac4-9f07-5f72f9f560bd",
+              "parentUUID": "ab9d94f8-0de6-4c49-966a-753ae6d0f3a4",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ccb51747-f12c-4ac4-9f07-5f72f9f560bd"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 9501,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": null,
+      "version": "5.1.0"
+    }
+  }
+}
