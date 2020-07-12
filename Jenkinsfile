@@ -12,7 +12,11 @@ echo 'Application Hotel vue deployed successfully'
         stage('Front end tests'){
         steps{
             sh'''
-echo 'Application Hotel vue deployed successfully'
+            cd frontend/
+            npm install && npm run mocha
+            echo 'tests results'
+            pwd
+            ls -lart
             '''
         }
         }
