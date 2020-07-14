@@ -1,0 +1,100 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-07-14T18:52:35.708Z",
+    "end": "2020-07-14T18:52:37.213Z",
+    "duration": 1505,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "e9de71bb-1cb0-4b7e-9374-286be93f4386",
+      "title": "",
+      "fullFile": "cypress/integration/addClient.js",
+      "file": "cypress/integration/addClient.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "019a2f7e-2165-46dd-9688-be2126cd324a",
+          "title": "add a client",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "login, add client, logout",
+              "fullTitle": "add a client login, add client, logout",
+              "timedOut": null,
+              "duration": 1384,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.authentification() //show all clients\n.then(function (response) {\n  cy.request({\n    method: 'GET',\n    url: 'http://localhost:3000/api/clients',\n    headers: {\n      'X-User-Auth': JSON.stringify(Cypress.env().loginToken),\n      'Content-Type': 'application/json'\n    }\n  }).then(function (response) {\n    expect(response.body[0].name).to.eq('Jonas Hellman');\n  });\n}) //create a new client\n.then(function (response) {\n  cy.request({\n    method: 'POST',\n    url: 'http://localhost:3000/api/client/new',\n    headers: {\n      'X-User-Auth': JSON.stringify(Cypress.env().loginToken),\n      'Content-Type': 'application/json'\n    },\n    body: {\n      \"name\": \"Tack Rafael!\",\n      \"email\": \"ff@ff.com\",\n      \"telephone\": \"7878787878\"\n    }\n  }).then(function (response) {\n    cy.log(response.body);\n    expect(response.body.name).to.eq('Tack Rafael!');\n  });\n}) //logout\n.then(function (response) {\n  cy.request({\n    method: 'POST',\n    url: 'http://localhost:3000/api/logout',\n    headers: {\n      'X-User-Auth': JSON.stringify(Cypress.env().loginToken),\n      'Content-Type': 'application/json'\n    }\n  }).then(function (response) {\n    cy.log(response.status);\n    expect(response.status).to.eq(200);\n  });\n});",
+              "err": {},
+              "uuid": "98f1537e-429d-4095-8550-cb762cca7d37",
+              "parentUUID": "019a2f7e-2165-46dd-9688-be2126cd324a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "98f1537e-429d-4095-8550-cb762cca7d37"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1384,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": null,
+      "version": "5.1.0"
+    }
+  }
+}

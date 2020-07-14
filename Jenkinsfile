@@ -6,7 +6,7 @@ pipeline{
             sh'''
 echo 'Application Hotel vue deployed successfully'
             '''
-        }
+            }
         }
 
         stage('Front end tests'){
@@ -18,13 +18,17 @@ echo 'Application Hotel vue deployed successfully'
             pwd
             ls -lart
             '''
-        }
+            }
         }
 
         stage('Back end tests'){
         steps{
             sh'''
-echo 'Application Hotel vue deployed successfully'
+            cd backend/
+            npm install && npm run mocha
+            echo 'tests results'
+            pwd
+            ls -lart
             '''
         }
         }
