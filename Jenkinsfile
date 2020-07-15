@@ -18,6 +18,15 @@ echo 'Application Hotel vue deployed successfully'
             pwd
             ls -lart
             '''
+             publishHTML([
+                allowMissing: false, 
+                alwaysLinkToLastBuild: false, 
+                keepAll: false, 
+                reportDir: 'frontend/frontend-tests/mochawesome-report', 
+                reportFiles: 'mochawesome.html', 
+                reportName: 'Frontend report', 
+                reportTitles: ''
+                ])
             }
         }
 
@@ -30,6 +39,15 @@ echo 'Application Hotel vue deployed successfully'
             pwd
             ls -lart
             '''
+            publishHTML([
+                allowMissing: false, 
+                alwaysLinkToLastBuild: false, 
+                keepAll: false, 
+                reportDir: 'backend/mochawesome-report', 
+                reportFiles: 'mochawesome.html', 
+                reportName: 'Backend report', 
+                reportTitles: ''
+                ])
         }
         }
 
