@@ -1,0 +1,104 @@
+2020-07-15 14:00:11,570 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2020-07-15 14:00:11,629 INFO o.a.j.JMeter: Loading user properties from: /home/christophe/Documents/Jmeter/apache-jmeter-5.3/bin/user.properties
+2020-07-15 14:00:11,631 INFO o.a.j.JMeter: Loading system properties from: /home/christophe/Documents/Jmeter/apache-jmeter-5.3/bin/system.properties
+2020-07-15 14:00:11,637 INFO o.a.j.JMeter: Copyright (c) 1998-2020 The Apache Software Foundation
+2020-07-15 14:00:11,638 INFO o.a.j.JMeter: Version 5.3
+2020-07-15 14:00:11,638 INFO o.a.j.JMeter: java.version=1.8.0_252
+2020-07-15 14:00:11,638 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
+2020-07-15 14:00:11,639 INFO o.a.j.JMeter: os.name=Linux
+2020-07-15 14:00:11,639 INFO o.a.j.JMeter: os.arch=amd64
+2020-07-15 14:00:11,639 INFO o.a.j.JMeter: os.version=5.3.0-62-generic
+2020-07-15 14:00:11,639 INFO o.a.j.JMeter: file.encoding=UTF-8
+2020-07-15 14:00:11,640 INFO o.a.j.JMeter: java.awt.headless=null
+2020-07-15 14:00:11,640 INFO o.a.j.JMeter: Max memory     =1073741824
+2020-07-15 14:00:11,641 INFO o.a.j.JMeter: Available Processors =4
+2020-07-15 14:00:11,665 INFO o.a.j.JMeter: Default Locale=English (EN)
+2020-07-15 14:00:11,666 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2020-07-15 14:00:11,666 INFO o.a.j.JMeter: JMeterHome=/home/christophe/Documents/Jmeter/apache-jmeter-5.3
+2020-07-15 14:00:11,666 INFO o.a.j.JMeter: user.dir  =/home/christophe/Documents/CI-CD/automation-cicd-christophevalens
+2020-07-15 14:00:11,667 INFO o.a.j.JMeter: PWD       =/home/christophe/Documents/CI-CD/automation-cicd-christophevalens
+2020-07-15 14:00:11,667 INFO o.a.j.JMeter: IP: 127.0.1.1 Name: christophe-VirtualBox FullName: christophe-VirtualBox
+2020-07-15 14:00:12,181 INFO o.a.j.JMeter: Setting LAF to: com.github.weisj.darklaf.DarkLaf:com.github.weisj.darklaf.theme.DarculaTheme
+2020-07-15 14:00:13,123 INFO o.a.j.JMeter: Loaded icon properties from org/apache/jmeter/images/icon.properties
+2020-07-15 14:00:31,340 INFO o.a.j.s.FileServer: Default base='/home/christophe/Documents/CI-CD/automation-cicd-christophevalens'
+2020-07-15 14:00:31,352 INFO o.a.j.g.a.Load: Loading file: /home/christophe/Documents/CI-CD/automation-cicd-christophevalens/performance/cypress/integration/addclient.jmx
+2020-07-15 14:00:31,353 INFO o.a.j.s.FileServer: Set new base='/home/christophe/Documents/CI-CD/automation-cicd-christophevalens/performance/cypress/integration'
+2020-07-15 14:00:31,989 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2020-07-15 14:00:32,054 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2020-07-15 14:00:32,061 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2020-07-15 14:00:32,073 INFO o.a.j.s.SaveService: Loading file: /home/christophe/Documents/CI-CD/automation-cicd-christophevalens/performance/cypress/integration/addclient.jmx
+2020-07-15 14:00:32,218 INFO o.a.j.p.h.c.CookieManager: Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_
+2020-07-15 14:00:32,227 INFO o.a.j.p.h.c.CacheManager: Will only cache the following methods: [GET]
+2020-07-15 14:00:32,258 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2020-07-15 14:00:32,258 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2020-07-15 14:00:32,259 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2020-07-15 14:00:32,259 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2020-07-15 14:00:32,259 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2020-07-15 14:00:32,260 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2020-07-15 14:00:33,054 INFO o.a.j.s.FileServer: Set new base='/home/christophe/Documents/CI-CD/automation-cicd-christophevalens/performance/cypress/integration'
+2020-07-15 14:07:30,595 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2020-07-15 14:07:30,596 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to ISO-8859-1
+2020-07-15 14:07:30,598 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2020-07-15 14:07:30,599 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2020-07-15 14:07:31,088 INFO o.a.j.v.ViewResultsFullVisualizer: Add JavaFX to your Java installation if you want to use renderer: org.apache.jmeter.visualizers.RenderInBrowser
+2020-07-15 14:07:40,273 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2020-07-15 14:07:40,276 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2020-07-15 14:07:40,277 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2020-07-15 14:07:40,281 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2020-07-15 14:07:40,281 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2020-07-15 14:07:41,328 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2020-07-15 14:07:41,594 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2020-07-15 14:07:41,595 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group.
+2020-07-15 14:07:41,595 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2020-07-15 14:07:41,596 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2020-07-15 14:07:41,614 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2020-07-15 14:07:41,614 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2020-07-15 14:07:41,636 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2020-07-15 14:07:41,687 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = christophe-VirtualBox
+2020-07-15 14:07:41,713 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2020-07-15 14:07:42,630 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2020-07-15 14:07:42,630 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2020-07-15 14:07:42,634 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2020-07-15 14:07:42,635 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2020-07-15 14:08:21,601 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2020-07-15 14:08:21,604 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2020-07-15 14:08:21,610 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2020-07-15 14:08:21,862 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2020-07-15 14:08:21,863 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group.
+2020-07-15 14:08:21,863 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2020-07-15 14:08:21,863 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2020-07-15 14:08:21,877 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2020-07-15 14:08:21,878 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2020-07-15 14:08:21,880 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2020-07-15 14:08:22,431 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2020-07-15 14:08:22,431 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2020-07-15 14:08:22,432 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2020-07-15 14:08:22,433 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2020-07-15 14:19:30,720 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2020-07-15 14:19:30,722 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2020-07-15 14:19:30,739 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2020-07-15 14:19:31,125 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2020-07-15 14:19:31,125 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group.
+2020-07-15 14:19:31,126 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2020-07-15 14:19:31,126 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2020-07-15 14:19:31,129 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2020-07-15 14:19:31,129 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2020-07-15 14:19:31,138 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2020-07-15 14:19:31,809 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2020-07-15 14:19:31,809 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2020-07-15 14:19:31,811 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2020-07-15 14:19:31,811 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
+2020-07-15 14:19:39,434 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2020-07-15 14:19:39,435 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2020-07-15 14:19:39,438 INFO o.a.j.g.u.JMeterMenuBar: setRunning(true, *local*)
+2020-07-15 14:19:39,657 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2020-07-15 14:19:39,657 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group.
+2020-07-15 14:19:39,657 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2020-07-15 14:19:39,658 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2020-07-15 14:19:39,674 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2020-07-15 14:19:39,674 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2020-07-15 14:19:39,676 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2020-07-15 14:19:40,225 INFO o.a.j.t.JMeterThread: Thread is done: Thread Group 1-1
+2020-07-15 14:19:40,226 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2020-07-15 14:19:40,236 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2020-07-15 14:19:40,237 INFO o.a.j.g.u.JMeterMenuBar: setRunning(false, *local*)
