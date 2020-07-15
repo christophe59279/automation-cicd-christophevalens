@@ -52,8 +52,8 @@ echo 'Application Hotel vue deployed successfully'
         steps{
             sh'''
             cd performance/
-            rm test1.csv -Rf && rm html-reports/ Rf
-            jmeter -n -t addAClient_performance.jmx -l test1.csv -e -o html-reports/
+            rm test1.csv -Rf && rm html-reports/ -Rf
+            jmeter -n -t cypress/integration/addAClient_performance.jmx -l test1.csv -e -o html-reports/
             '''
             publishHTML([
                 allowMissing: false, 
