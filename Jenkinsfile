@@ -14,11 +14,10 @@ echo 'Application Hotel vue deployed successfully'
             sh'''
             cd frontend/frontend-tests/
             npm install && npm run mocha
-            echo 'tests results'
-            pwd
-            ls -lart
             '''
-             publishHTML([
+            archiveArtifacts allowEmptyArchive: true, artifacts: 'frontend/frontend-tests/cypress/videos/**', followSymlinks: false
+            
+            publishHTML([
                 allowMissing: false, 
                 alwaysLinkToLastBuild: false, 
                 keepAll: false, 
@@ -35,10 +34,8 @@ echo 'Application Hotel vue deployed successfully'
             sh'''
             cd backend/
             npm install && npm run mocha
-            echo 'tests results'
-            pwd
-            ls -lart
             '''
+            archiveArtifacts allowEmptyArchive: true, artifacts: 'backend/cypress/videos/**', followSymlinks: false
             publishHTML([
                 allowMissing: false, 
                 alwaysLinkToLastBuild: false, 
@@ -54,8 +51,20 @@ echo 'Application Hotel vue deployed successfully'
         stage('performance tests'){
         steps{
             sh'''
-echo 'Application Hotel vue deployed successfully'
+            cd performance/
+            rm test1.csv -Rf && rm html-reports/ Rf
+            jmeter -n -t addAClient_performance.jmx -l test1.csv -e -o html-reports/
             '''
+            publishHTML([
+                allowMissing: false, 
+                alwaysLinkToLastBuild: false, 
+                keepAll: false, 
+                reportDir: 'performance/html-reports', 
+                reportFiles: 'index.html', 
+                reportName: 'Performance report', 
+                reportTitles: ''
+                ])
+
         }
         }
 
